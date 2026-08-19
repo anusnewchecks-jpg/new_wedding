@@ -180,7 +180,7 @@ a{color:inherit;}
 /* ============================= MUSIC TOGGLE (bottom-left, above intro + main site) ============================= */
 #musicToggle{
   position:fixed; right:18px; bottom:18px; z-index:10001;
-  width:50px; height:60px; border-radius:50%;
+  width:70px; height:80px; border-radius:50%;
   background:rgba(255,255,255,.6); backdrop-filter:blur(10px);
   border:1px solid rgba(201,160,90,.45); box-shadow:0 8px 22px rgba(169,121,63,.35);
   display:flex; align-items:center; justify-content:center; cursor:pointer;
@@ -191,7 +191,7 @@ a{color:inherit;}
 #musicToggle .disc{transition:transform .3s;}
 #musicToggle.playing .disc{animation:spin 4s linear infinite;}
 @keyframes musicPulse{0%,100%{box-shadow:0 0 0 0 rgba(201,160,90,.35);}50%{box-shadow:0 0 0 9px rgba(201,160,90,0);}}
-@media (max-width:600px){#musicToggle{right:14px; bottom:14px; width:44px; height:44px; font-size:17px;}}
+@media (max-width:600px){#musicToggle{right:14px; bottom:14px; width:66px; height:66px; font-size:17px;}}
 
 /* ============================= HERO ============================= */
 .hero{
@@ -571,7 +571,7 @@ footer{
         <div class="invite-grid">
           <div class="detail"><div class="ic">📅</div><div class="lbl">Date</div><div class="val" id="eventDateTxt"><i>23 November 2026</i></div></div>
           <div class="detail"><div class="ic">🗓️</div><div class="lbl">Day</div><div class="val" id="eventDayTxt"><i>Monday</i></div></div>
-          <div class="detail"><div class="ic">🕡</div><div class="lbl">Time</div><div class="val" id="eventTimeTxt"><i>10:30 AM onwards</i></div></div>
+          <div class="detail"><div class="ic">🕡</div><div class="lbl">Time</div><div class="val" id="eventTimeTxt"><i>10:00 AM onwards</i></div></div>
           <div class="detail"><div class="ic">📍</div><div class="lbl">Venue</div><div class="val small" id="eventVenueTxt">Jashan Banquet Hall<br><i>19, Rhenius St, Langford Town, Richmond Town, Bengaluru, Karnataka 560025</i></div></div>
         </div>
       </div>
@@ -655,13 +655,13 @@ footer{
       </p>
       <div class="rsvp-btns">
         <a class="rsvp-btn" id="rsvpCall" href="tel:+910000000000">
-          <div class="ic">📞</div><div class="lbl">Call</div><div class="sub">+91 00000 00000</div>
+          <div class="ic">📞</div><div class="lbl">Call</div><div class="sub">+91 9036748473</div>
         </a>
         <a class="rsvp-btn" id="rsvpWhatsapp" href="https://wa.me/910000000000" target="_blank" rel="noopener">
           <div class="ic">💬</div><div class="lbl">WhatsApp</div><div class="sub">Message Us</div>
         </a>
         <a class="rsvp-btn" id="rsvpEmail" href="mailto:family@example.com">
-          <div class="ic">📧</div><div class="lbl">Email</div><div class="sub">family@example.com</div>
+          <div class="ic">📧</div><div class="lbl">Email</div><div class="sub">anurana@gmail.com</div>
         </a>
       </div>
     </div>
@@ -688,26 +688,27 @@ const CONFIG = {
   weddingDateDisplay: "23 November 2002",
   eventDate: "2026-11-23T18:30:00", // ISO date used for countdown — 25th anniversary celebration
   eventDateDisplay: "23 November 2026",
-  eventDay: "Tuesday",
-  eventTime: "6:30 PM onwards",
-  venueName: "[Hall Name]",
-  venueAddress: "[Complete Address]",
-  mapsUrl: "https://maps.google.com/?q=", // paste your Google Maps link here
+  eventDay: "Monday",
+  eventTime: "10:30 AM onwards",
+  venueName: "Jashan Banquet Hall",
+  venueAddress: "19, Rhenius St, Langford Town, Richmond Town, Bengaluru, Karnataka 560025",
+  mapsUrl: "https://www.google.com/maps/search/?api=1&query=Jashan+Banquet+Hall%2C+19+Rhenius+St%2C+Langford+Town%2C+Richmond+Town%2C+Bengaluru%2C+Karnataka+560025", // paste your Google Maps link here
   contact: {
     phone: "+91 9036748473",
     phoneHref: "tel:+919036748473",
-    whatsappHref: "https://wa.me/97892424743",
+    whatsappHref: "https://wa.me/917892424743",
     email: "anurana7975@gmail.com"
   },
   // Replace with real photo URLs to use actual pictures in the gallery.
   // Leave empty to keep the elegant placeholder tiles.
   galleryPhotos: ["", "", "", "", "", "", "", "", "", ""],
   schedule: [
-    { title: "Welcome Guests", time: "10:30 AM", icon: "🌸" },
-    { title: "Cake Cutting", time: "11:15 AM", icon: "🎂" },
-    { title: "Family Photos", time: "11:45 AM", icon: "📸" },
+    { title: "Welcome Guests", time: "10:00 AM", icon: "🌸" },
+    { title: "Cake Cutting", time: "11:00 AM", icon: "🎂" },
+    { title: "Family Photos", time: "11:20 AM", icon: "📸" },
+    { title: "Dance", time: "12:00 PM", icon: "📸💃" },
     { title: "Lunch", time: "12:30 PM", icon: "🍽️" },
-    { title: "Vote of Thanks", time: "4:30 PM", icon: "🙏" }
+    { title: "End of program", time: "4:30 PM", icon: "🙏" }
   ],
   musicSrc: "heeriye.mp3" // background music file (place it alongside this HTML file)
 };
