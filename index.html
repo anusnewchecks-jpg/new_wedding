@@ -179,8 +179,8 @@ a{color:inherit;}
 
 /* ============================= MUSIC TOGGLE (bottom-left, above intro + main site) ============================= */
 #musicToggle{
-  position:fixed; left:18px; bottom:18px; z-index:10001;
-  width:50px; height:50px; border-radius:50%;
+  position:fixed; right:18px; bottom:18px; z-index:10001;
+  width:50px; height:60px; border-radius:50%;
   background:rgba(255,255,255,.6); backdrop-filter:blur(10px);
   border:1px solid rgba(201,160,90,.45); box-shadow:0 8px 22px rgba(169,121,63,.35);
   display:flex; align-items:center; justify-content:center; cursor:pointer;
@@ -191,7 +191,7 @@ a{color:inherit;}
 #musicToggle .disc{transition:transform .3s;}
 #musicToggle.playing .disc{animation:spin 4s linear infinite;}
 @keyframes musicPulse{0%,100%{box-shadow:0 0 0 0 rgba(201,160,90,.35);}50%{box-shadow:0 0 0 9px rgba(201,160,90,0);}}
-@media (max-width:600px){#musicToggle{left:14px; bottom:14px; width:44px; height:44px; font-size:17px;}}
+@media (max-width:600px){#musicToggle{right:14px; bottom:14px; width:44px; height:44px; font-size:17px;}}
 
 /* ============================= HERO ============================= */
 .hero{
@@ -569,10 +569,10 @@ footer{
         <h3 class="invite-title">Shishpal Singh &amp; Surila Devi</h3>
 
         <div class="invite-grid">
-          <div class="detail"><div class="ic">📅</div><div class="lbl">Date</div><div class="val" id="eventDateTxt">23 November 2026</div></div>
-          <div class="detail"><div class="ic">🗓️</div><div class="lbl">Day</div><div class="val" id="eventDayTxt">Tuesday</div></div>
-          <div class="detail"><div class="ic">🕡</div><div class="lbl">Time</div><div class="val" id="eventTimeTxt">6:30 PM onwards</div></div>
-          <div class="detail"><div class="ic">📍</div><div class="lbl">Venue</div><div class="val small" id="eventVenueTxt">[Hall Name]<br>[Complete Address]</div></div>
+          <div class="detail"><div class="ic">📅</div><div class="lbl">Date</div><div class="val" id="eventDateTxt"><i>23 November 2026</i></div></div>
+          <div class="detail"><div class="ic">🗓️</div><div class="lbl">Day</div><div class="val" id="eventDayTxt"><i>Monday</i></div></div>
+          <div class="detail"><div class="ic">🕡</div><div class="lbl">Time</div><div class="val" id="eventTimeTxt"><i>10:30 AM onwards</i></div></div>
+          <div class="detail"><div class="ic">📍</div><div class="lbl">Venue</div><div class="val small" id="eventVenueTxt">Jashan Banquet Hall<br><i>19, Rhenius St, Langford Town, Richmond Town, Bengaluru, Karnataka 560025</i></div></div>
         </div>
       </div>
     </div>
@@ -618,7 +618,7 @@ footer{
 <!-- ===================== SCHEDULE ===================== -->
 <section id="schedule" class="section">
   <div class="container">
-    <div class="eyebrow reveal">Order of the Evening</div>
+    <div class="eyebrow reveal">Order of the Morning</div>
     <h2 class="section-title reveal">Event Schedule</h2>
     <p class="section-sub reveal">A gentle flow of moments, made to be savoured</p>
 
@@ -635,8 +635,8 @@ footer{
 
     <div class="map-card reveal">
       <div class="pin">📍</div>
-      <div class="venue-name" id="mapVenueName">[Hall Name]</div>
-      <div class="venue-addr" id="mapVenueAddr">[Complete Address]</div>
+      <div class="venue-name" id="mapVenueName">Jashan Banquet Hall</div>
+      <div class="venue-addr" id="mapVenueAddr">19, Rhenius St, Langford Town, Richmond Town, Bengaluru, Karnataka 560025</div>
       <a href="#" target="_blank" rel="noopener" class="btn-gold" id="mapsLink">📍 Get Directions</a>
     </div>
   </div>
@@ -694,20 +694,20 @@ const CONFIG = {
   venueAddress: "[Complete Address]",
   mapsUrl: "https://maps.google.com/?q=", // paste your Google Maps link here
   contact: {
-    phone: "+91 00000 00000",
-    phoneHref: "tel:+910000000000",
-    whatsappHref: "https://wa.me/910000000000",
-    email: "family@example.com"
+    phone: "+91 9036748473",
+    phoneHref: "tel:+919036748473",
+    whatsappHref: "https://wa.me/97892424743",
+    email: "anurana7975@gmail.com"
   },
   // Replace with real photo URLs to use actual pictures in the gallery.
   // Leave empty to keep the elegant placeholder tiles.
   galleryPhotos: ["", "", "", "", "", "", "", "", "", ""],
   schedule: [
-    { title: "Welcome Guests", time: "6:30 PM", icon: "🌸" },
-    { title: "Cake Cutting", time: "7:15 PM", icon: "🎂" },
-    { title: "Dinner", time: "8:00 PM", icon: "🍽️" },
-    { title: "Family Photos", time: "9:00 PM", icon: "📸" },
-    { title: "Vote of Thanks", time: "9:45 PM", icon: "🙏" }
+    { title: "Welcome Guests", time: "10:30 AM", icon: "🌸" },
+    { title: "Cake Cutting", time: "11:15 AM", icon: "🎂" },
+    { title: "Family Photos", time: "11:45 AM", icon: "📸" },
+    { title: "Lunch", time: "12:30 PM", icon: "🍽️" },
+    { title: "Vote of Thanks", time: "4:30 PM", icon: "🙏" }
   ],
   musicSrc: "heeriye.mp3" // background music file (place it alongside this HTML file)
 };
