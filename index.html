@@ -661,7 +661,7 @@ footer{
           <div class="ic">💬</div><div class="lbl">WhatsApp</div><div class="sub">Message Us</div>
         </a>
         <a class="rsvp-btn" id="rsvpEmail" href="mailto:family@example.com">
-          <div class="ic">📧</div><div class="lbl">Email</div><div class="sub">anurana@gmail.com</div>
+          <div class="ic">📧</div><div class="lbl">Email</div><div class="sub">anurana7975@gmail.com</div>
         </a>
       </div>
     </div>
@@ -1011,11 +1011,19 @@ tryPlayMusic();
 // anywhere on the page — no dedicated "tap to start" screen, per the brief.
 function firstInteractionMusic(){
   tryPlayMusic();
+
   document.removeEventListener('pointerdown', firstInteractionMusic);
+  document.removeEventListener('touchstart', firstInteractionMusic);
+  document.removeEventListener('click', firstInteractionMusic);
   document.removeEventListener('keydown', firstInteractionMusic);
 }
-document.addEventListener('pointerdown', firstInteractionMusic, { once:true });
-document.addEventListener('keydown', firstInteractionMusic, { once:true });
+
+document.addEventListener('pointerdown', firstInteractionMusic, { once: true });
+document.addEventListener('touchstart', firstInteractionMusic, { once: true });
+document.addEventListener('click', firstInteractionMusic, { once: true });
+document.addEventListener('keydown', firstInteractionMusic, { once: true });
+     
+
 
 /* initial nav state */
 updateNav();
